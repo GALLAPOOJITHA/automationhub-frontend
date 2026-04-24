@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 const API = "https://automationhub-backend.onrender.com/api";
 
 function VerifyOtp() {
-  const [email, setEmail] = useState("");
+  const location = useLocation();
+const [email, setEmail] = useState(location.state?.email || "");
   const [otp, setOtp] = useState("");
 
   const verify = async () => {

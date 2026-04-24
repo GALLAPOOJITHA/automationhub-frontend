@@ -27,7 +27,7 @@ const signup = async (e) => {
 
     // ❗ No storing user yet (OTP verification pending)
     alert("Signup successful! OTP sent to your email.");
-    navigate("/verify");
+   navigate("/verify", { state: { email: cleanEmail } });
   } catch (err) {
     console.error(err);
 
