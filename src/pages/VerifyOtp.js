@@ -21,8 +21,8 @@ const [email, setEmail] = useState(location.state?.email || "");
         otp,
       });
 
-      alert(res.data.message);
-      window.location.href = "/signin"; // go to login after success
+      alert("Verified successfully. Please login.");
+window.location.href = "/signin";// go to login after success
     } catch (err) {
       alert(err.response?.data || "Error verifying OTP");
     }
