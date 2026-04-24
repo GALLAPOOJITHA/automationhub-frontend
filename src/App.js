@@ -7,6 +7,7 @@ import Experts from "./pages/Experts";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Dashboard from "./pages/Dashboard";
+import VerifyOtp from "./pages/VerifyOtp";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/verify" element={<VerifyOtp />} />
       </Routes>
     </Router>
   );
