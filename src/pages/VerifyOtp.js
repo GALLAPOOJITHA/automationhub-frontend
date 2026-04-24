@@ -33,13 +33,17 @@ window.location.href = "/signin";// go to login after success
       <h2>Verify OTP</h2>
 
       <input
-        placeholder="Enter Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        value={email}
+        readOnly
+/>
       <br />
       <br />
 
-      <input placeholder="Enter OTP" onChange={(e) => setOtp(e.target.value)} />
+      <input
+        placeholder="Enter OTP"
+        value={otp}
+        onChange={(e) => setOtp(e.target.value)}
+/>
       <br />
       <br />
 
